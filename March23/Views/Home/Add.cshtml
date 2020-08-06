@@ -1,0 +1,63 @@
+﻿<html>
+<head>
+    <title></title>
+
+</head>
+<body>
+    <form id="My-form" action="/home/addcar">
+        <div class="container" style="margin-top:25px">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <input id="Make" type="text" name="Make" class="form-control" placeholder="Make" />
+            </div>
+            </div>
+        <br />
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <input id="Model" type="text" name="Model" class="form-control" placeholder="Model" />
+                </div>
+            </div>
+        <br />
+        <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <input id="Year" type="text" name="Year" class="form-control" placeholder="Year" />
+                    </div>
+            </div>
+        <br />
+        <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <input id="Price" type="text" name="Price" class="form-control" placeholder="Price" />
+                    </div>
+            </div>
+        <br />
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <select id="CarType" name="CarType" class="form-control" style="font-weight:600">
+                    <option value="0">SUV</option>
+                    <option value="1">Sedan</option>
+                    <option value="2" id="Sc">SuperCar</option>
+                </select>
+            </div>
+        </div>
+
+                        <br />
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <input id="IsLeather" name="leather" type="checkbox" value="true" />
+                    Has Leather Seats
+                </div>
+                        </div>
+            <br />
+            <br />
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <button id="btn" disabled class="btn btn-lg btn-primary">Submit</button>
+                </div>
+            </div>
+
+</form>
+    @section Scripts { 
+    <script src="~/js/MyJS.js"></script>}
+</body>
+</html>
+
